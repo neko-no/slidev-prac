@@ -8,12 +8,18 @@ dependencies:
   '@slidev/cli':
     specifier: ^52.1.0
     version: 52.1.0(@types/markdown-it@14.1.2)(postcss@8.5.6)
+  '@slidev/theme-apple-basic':
+    specifier: ^0.25.1
+    version: 0.25.1
   '@slidev/theme-default':
     specifier: latest
     version: 0.25.0
   '@slidev/theme-seriph':
     specifier: latest
     version: 0.25.0
+  slidev-theme-geist:
+    specifier: ^0.8.1
+    version: 0.8.1
   vue:
     specifier: ^3.5.18
     version: 3.5.18(typescript@5.8.3)
@@ -1234,6 +1240,15 @@ packages:
       roughjs: 4.6.6
     dev: false
 
+  /@slidev/theme-apple-basic@0.25.1:
+    resolution: {integrity: sha512-saA5yYui+jTT13tP+QJKnWeM8sK0IA1iln2E3sWAJsfKdQHUD3fw8+AlUHLUH6yc8NPq3ewtZcwWx49a/iF8Tg==}
+    engines: {node: '>=14.0.0', slidev: '>=v0.47.0'}
+    dependencies:
+      '@slidev/types': 0.47.5
+      codemirror-theme-vars: 0.1.2
+      prism-theme-vars: 0.2.5
+    dev: false
+
   /@slidev/theme-default@0.25.0:
     resolution: {integrity: sha512-iWvthH1Ny+i6gTwRnEeeU+EiqsHC56UdEO45bqLSNmymRAOWkKUJ/M0o7iahLzHSXsiPu71B7C715WxqjXk2hw==}
     engines: {node: '>=14.0.0', slidev: '>=v0.47.0'}
@@ -1250,6 +1265,11 @@ packages:
       '@slidev/types': 0.47.5
       codemirror-theme-vars: 0.1.2
       prism-theme-vars: 0.2.5
+    dev: false
+
+  /@slidev/types@0.28.10:
+    resolution: {integrity: sha512-XcJ12giBaeSHxImlYuDfO1XW686kWDq4uoftnPZyIxhNew4FREsbOLY8oG5Nz5qn05qSsnSDQGo55EbantKvfg==}
+    engines: {node: '>=14.0.0'}
     dev: false
 
   /@slidev/types@0.47.5:
@@ -4463,6 +4483,15 @@ packages:
 
   /sisteransi@1.0.5:
     resolution: {integrity: sha512-bLGGlR1QxBcynn2d5YmDX4MGjlZvy2MRBDRNHLJ8VI6l6+9FUiyTFNJ0IveOSP0bcXgVDPRcfGqA0pjaqUpfVg==}
+    dev: false
+
+  /slidev-theme-geist@0.8.1:
+    resolution: {integrity: sha512-2DET+H1tvaFQyKYimg+4RlShLLnyOdW40GFfOH8kAJbsI1JOwzDiLv1UjyFO11y9O0/074/YIwArz9xg4Zde5A==}
+    engines: {node: '>=14', slidev: '>=0.20'}
+    dependencies:
+      '@slidev/types': 0.28.10
+      codemirror-theme-vars: 0.1.2
+      prism-theme-vars: 0.2.5
     dev: false
 
   /source-map-js@1.2.1:
