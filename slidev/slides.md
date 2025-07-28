@@ -1065,51 +1065,7 @@ docker run --name slidev --rm -it \
 
 </div>
 
----
-layout: center
-class: text-center
----
-
-# まとめ
-
-このガイドに従って学習を進めることで、
-**実務3年のWebアプリケーションエンジニアは5日間でSlidevを実戦レベルまで習得**し、
-技術発表の品質と効率性を大幅に向上させることができます。
-
-<div class="mt-8">
-
-## 次のステップ
-- 実際のプロジェクトでSlidevを使用
-- カスタムテーマとコンポーネントライブラリの構築
-- チーム内でのSlideva普及とベストプラクティス共有
-
-</div>
-
 
 ---
-layout: image-right
-image: https://fastly.picsum.photos/id/12/2500/1667.jpg?hmac=Pe3284luVre9ZqNzv1jMFpLihFI6lwq7TPgMSsNXw2w
+src: ./pages/day1-slides.md
 ---
-
-# タイトルを適当に入れてみるよ！
-
-- 箇条書きの練習はどうだい？
-- こんな感じよ！
-
-```ts
-import * from "React";
-
-type = {
-  input: "string",
-  output: "array",
-};
-```
-
-<!-- NOTE >
-なんか記載してみるけど，これが反映されなのかを確かめたいです．
-
----
-
-# 結論
-
-全然使いこなせるレベルにない！！
