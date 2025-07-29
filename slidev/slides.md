@@ -2,6 +2,7 @@
 mdc: true
 theme: apple-basic
 layout: intro-image
+highlighter: shiki
 image: 'https://cdn.jsdelivr.net/gh/slidevjs/slidev-covers@main/static/Afyjbfs1rKI.webp'
 ---
 
@@ -97,5 +98,27 @@ transition: fade
 <Counter :count="10" m="t-4" />
 
 <MyComponent />
+
+---
+
+# シンタックスハイライトの確認
+
+```ts{4-}
+import * from
+// ES6のアロー関数
+const add = (a, b) => a + b;
+
+// Promise使用例
+async function fetchData() {
+  try {
+    const response = await fetch('/api/data');
+    const data = await response.json();
+    return data;
+  } catch (error) {
+    console.error('Error:', error);
+  }
+}
+```
+
 
 ---
