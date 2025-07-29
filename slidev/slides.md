@@ -326,3 +326,17 @@ Superclass:  | { "java.lang.Object " | [Browse...] }
 </div>
 
 ---
+
+# Iconify
+
+<uim-rocket class="text-3xl text-orange-400 animate-ping" />
+
+---
+
+# YouTube埋め込み
+
+<div class="flex justify-center items-center h-full">
+  <Youtube id="umiJU89tJPs" width="800" height="450" />
+</div>
+
+---
