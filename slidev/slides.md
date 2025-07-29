@@ -248,3 +248,81 @@ erDiagram
 </div>
 
 ---
+
+# PlantUML - アクティビティ図
+
+<div class="flex justify-center items-center h-full">
+
+```plantuml
+@startuml
+!theme plain
+start
+:ログイン;
+if (認証成功?) then (yes)
+  :メインメニュー;
+  if (データ処理?) then (yes)
+    :データ処理;
+    :結果表示;
+  else (no)
+    :設定変更;
+  endif
+else (no)
+  :エラー表示;
+endif
+:ログアウト;
+stop
+@enduml
+```
+
+</div>
+
+---
+
+# PlantUML - マインドマップ
+
+<div class="flex justify-center items-center h-full">
+
+```plantuml
+@startmindmap
+!theme plain
+* Web開発
+** フロントエンド
+*** HTML/CSS
+*** JavaScript
+**** React
+**** Vue.js
+** バックエンド
+*** Node.js
+*** Python
+*** Java
+** データベース
+*** MySQL
+*** MongoDB
+** DevOps
+*** Docker
+*** CI/CD
+@endmindmap
+```
+
+</div>
+
+---
+
+# PlantUML - ワイヤーフレーム
+
+<div class="flex justify-center items-center h-full">
+
+```plantuml
+@startsalt
+{
+Name         | "                 "
+Modifiers:   | { (X) public | () default | () private | () protected
+                [] abstract | [] final   | [] static }
+Superclass:  | { "java.lang.Object " | [Browse...] }
+}
+@endsalt
+```
+
+</div>
+
+---
