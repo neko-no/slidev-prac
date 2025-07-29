@@ -83,15 +83,12 @@ transition: fade
 # 別のアイテム表示方法
 
 <v-clicks>
+
 - Item 1
 - Item 2
 - Item 3
-</v-clicks>
 
-```js {none|1|2}
-1; // 1回 Right Arrow や Space キーを押すことでハイライト
-2; // 2回 Right Arrow や Space キーを押すことでハイライト
-```
+</v-clicks>
 
 ---
 
