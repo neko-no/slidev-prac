@@ -122,3 +122,207 @@ async function fetchData() {
 
 
 ---
+
+# Mermaidによる図の作成
+
+<div class="flex justify-center items-center h-full">
+
+```mermaid
+sequenceDiagram
+  Alice->John: Hello John, how are you?
+  Note over Alice,John: A typical interaction
+```
+
+</div>
+
+---
+
+# フローチャート
+
+<div class="flex justify-center items-center h-full">
+
+```mermaid
+flowchart TD
+    A[開始] --> B{条件分岐}
+    B -->|Yes| C[処理A]
+    B -->|No| D[処理B]
+    C --> E[終了]
+    D --> E
+```
+
+</div>
+
+---
+
+# クラス図
+
+<div class="flex justify-center items-center h-full">
+
+```mermaid
+classDiagram
+    class Animal {
+        -name: string
+        -age: int
+        +getName(): string
+        +setAge(age: int): void
+    }
+    class Dog {
+        -breed: string
+        +bark(): void
+    }
+    Animal <|-- Dog
+```
+
+</div>
+
+---
+
+# ガントチャート
+
+<div class="flex justify-center items-center h-full">
+
+```mermaid
+gantt
+    title プロジェクトスケジュール
+    dateFormat  YYYY-MM-DD
+    section 設計
+    要件定義           :done,    des1, 2024-01-01,2024-01-05
+    システム設計       :active,  des2, 2024-01-06, 3d
+    section 開発
+    フロントエンド開発 :         dev1, after des2, 5d
+    バックエンド開発   :         dev2, after des2, 7d
+```
+
+</div>
+
+---
+
+# 円グラフ
+
+<div class="flex justify-center items-center h-full">
+
+```mermaid
+pie title プログラミング言語使用率
+    "JavaScript" : 35
+    "Python" : 25
+    "Java" : 20
+    "TypeScript" : 15
+    "その他" : 5
+```
+
+</div>
+
+---
+
+# ER図
+
+<div class="flex justify-center items-center h-full">
+
+```mermaid
+erDiagram
+    USER ||--o{ ORDER : places
+    USER {
+        int id PK
+        string name
+        string email
+    }
+    ORDER ||--|{ ORDER_ITEM : contains
+    ORDER {
+        int id PK
+        int user_id FK
+        date order_date
+    }
+    PRODUCT ||--o{ ORDER_ITEM : includes
+    ORDER_ITEM {
+        int order_id FK
+        int product_id FK
+        int quantity
+    }
+    PRODUCT {
+        int id PK
+        string name
+        decimal price
+    }
+```
+
+</div>
+
+---
+
+# PlantUML - アクティビティ図
+
+<div class="flex justify-center items-center h-full">
+
+```plantuml
+@startuml
+!theme plain
+start
+:ログイン;
+if (認証成功?) then (yes)
+  :メインメニュー;
+  if (データ処理?) then (yes)
+    :データ処理;
+    :結果表示;
+  else (no)
+    :設定変更;
+  endif
+else (no)
+  :エラー表示;
+endif
+:ログアウト;
+stop
+@enduml
+```
+
+</div>
+
+---
+
+# PlantUML - マインドマップ
+
+<div class="flex justify-center items-center h-full">
+
+```plantuml
+@startmindmap
+!theme plain
+* Web開発
+** フロントエンド
+*** HTML/CSS
+*** JavaScript
+**** React
+**** Vue.js
+** バックエンド
+*** Node.js
+*** Python
+*** Java
+** データベース
+*** MySQL
+*** MongoDB
+** DevOps
+*** Docker
+*** CI/CD
+@endmindmap
+```
+
+</div>
+
+---
+
+# PlantUML - ワイヤーフレーム
+
+<div class="flex justify-center items-center h-full">
+
+```plantuml
+@startsalt
+{
+Name         | "                 "
+Modifiers:   | { (X) public | () default | () private | () protected
+                [] abstract | [] final   | [] static }
+Superclass:  | { "java.lang.Object " | [Browse...] }
+}
+@endsalt
+```
+
+</div>
+
+---
